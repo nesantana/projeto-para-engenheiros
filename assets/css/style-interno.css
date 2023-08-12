@@ -1,0 +1,48 @@
+header {
+  height: auto;
+  padding: 30px;
+}
+
+#menu {
+  position: relative;
+  top: 0;
+  box-shadow: none;
+}
+
+#conteudo-interno #imagem-grande {
+  padding: 60px 0 30px 0;
+}
+
+#conteudo-interno #conteudo-escrito {
+  display: flex;
+  gap: 30px;
+}
+
+#conteudo-interno #conteudo-escrito h1 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+#conteudo-interno #conteudo-escrito p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+
+#conteudo-interno #conteudo-escrito img {
+  min-width: 370px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 998px) {
+  #conteudo-interno #conteudo-escrito {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  #conteudo-interno #conteudo-escrito img {
+    min-width: 100%;
+  }
+}

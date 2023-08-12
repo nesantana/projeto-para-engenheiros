@@ -1,0 +1,311 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  transition: ease-in .1s;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5,
+h6, p, span, ul, ol,
+body, html {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+header {
+  background: url(../img/banner.png) no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+header #informacoes .container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header #informacoes h1 {
+  font-weight: 900;
+  font-size: 46px;
+  color: #FFFFFF;
+}
+
+header #informacoes h2 {
+  font-weight: 400;
+  font-size: 38px;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+
+.botao {
+  padding: 25px 45px;
+  background: #FBAD1A;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.botao:hover {
+  transform: scale(1.01);
+}
+#menu {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  top: 30px;
+}
+
+#menu .container {
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, .1);
+  background: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  min-width: 1200px;
+}
+
+#menu ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+#menu ul li {
+  padding: 0 10px;
+}
+
+#menu ul li a {
+  color: #000000;
+  font-size: 12px;
+  font-weight: 500;
+  display: block;
+}
+
+#menu ul li a:hover {
+  transform: scale(1.03);
+  text-decoration: underline;
+}
+
+#menu ul li a.diferente {
+  color: #FFFFFF;
+  background: #FBAD1A;
+  padding: 10px;
+}
+
+#servicos {
+  padding: 60px 0 30px 0;
+  background: #FBAD1A;
+}
+
+#servicos .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#servicos .item {
+  max-width: 30%;
+  min-width: 30%;
+  display: flex;
+  margin-bottom: 30px;
+  gap: 20px;
+  align-items: center;
+  color: #fff;
+}
+
+#servicos .item img {
+  height: fit-content;
+}
+
+#servicos h3 {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+#servicos p {
+  padding: 0;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 5px 0 0 0;
+}
+
+
+
+#localizacao {
+  padding: 60px 0;
+}
+
+#localizacao h3 {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+#localizacao iframe {
+  margin: 20px 0 30px 0;
+}
+
+#localizacao #botoes {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+#localizacao #botoes a {
+  background: #FBAD1A;
+  padding: 10px 0;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  color: #FFF;
+  width: 100%;
+  text-align: center;
+}
+
+#localizacao #botoes a:hover {
+  text-decoration: underline;
+}
+
+footer #topo-footer {
+  background: #AE7303;
+  padding: 30px 0;
+}
+
+footer #topo-footer #menu-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer #topo-footer #menu-footer ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer #topo-footer #menu-footer ul li {
+  padding: 0 10px;
+}
+
+footer #topo-footer #menu-footer ul li a {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #FFF;
+  text-decoration: none;
+}
+
+footer #topo-footer #menu-footer ul li a:hover {
+  text-decoration: underline;
+}
+
+footer #ultimo-texto {
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  padding: 20px 0;
+}
+
+#servicos-entregues .container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+#servicos-entregues .servico-entregue {
+  color: #000;
+  max-width: 30%;
+  display: block;
+}
+
+#servicos-entregues .servico-entregue:hover {
+  text-decoration: underline;
+}
+
+#servicos-entregues .servico-entregue h4 {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+#servicos-entregues .servico-entregue p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 998px) {
+  #menu .container {
+    min-width: 100%;
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  header {
+    height: auto;
+  }
+
+  header #informacoes .container {
+    padding: 120px 10px 60px 10px;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    text-align: center;
+  }
+
+  #menu .container ul {
+    display: none;
+  }
+
+  #servicos .container{
+    padding: 10px;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  #servicos .container .item {
+    flex-direction: column;
+    max-width: 100%;
+    min-width: 100%;
+  }
+  
+  #servicos-entregues .servico-entregue {
+    padding: 0 10px;
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  #localizacao {
+    padding: 10px;
+  }
+
+  #localizacao #botoes {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  footer #topo-footer #menu-footer {
+    flex-direction: column;
+  }
+
+  footer #topo-footer #menu-footer ul {
+    display: none;
+  }
+}
